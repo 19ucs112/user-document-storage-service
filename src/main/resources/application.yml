@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: user-document-storage-service
+  profiles:
+    active: local
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+com:
+  user:
+    data:
+      storage:
+        aws:
+          aws-access-key: ${AWS_ACCESS_KEY_ID}
+          aws-secret-key: ${AWS_SECRET_KEY}
+          aws-region: ${AWS_REGION:ap-south-1}
+          s3:
+            s3-storage-prefix: ${S3_STORAGE_PREFIX:/}
+            s3bucket-name: ${S3_BUCKET_NAME:my-aws-document-storage}
+        base-url: http://localhost:${server.port}
+server:
+  port: 8080
