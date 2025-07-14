@@ -1,0 +1,5 @@
+com.user.document.storage.userdocumentstorageservice
+com.user.document.storage.userdocumentstorageservice.model
+com.user.document.storage.userdocumentstorageservice.model.exceptions
+com.user.document.storage.userdocumentstorageservice.rest.v1
+com.user.document.storage.userdocumentstorageservice.service
